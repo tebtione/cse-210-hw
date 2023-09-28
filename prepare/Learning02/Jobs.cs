@@ -7,15 +7,8 @@ public class Job
     public int _startYear;
     public int _endYear;
 
-    public Job(string jobTitle, string company, int startYear, int endYear)
+    public void Display()
     {
-        _jobTitle = jobTitle;
-        _company = company;
-        _startYear = startYear;
-        _endYear = endYear;
+         Console.WriteLine($"{_jobTitle} ({_company}) {_startYear} - {_endYear}");
     }
-        public void Display()
-        {
-            Console.WriteLine($"{_jobTitle} ({_company}) {_startYear} - {_endYear}");
-        }
 }
